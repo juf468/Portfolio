@@ -1,13 +1,12 @@
-import { useEffect, useState } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import cubeIcon from '../../assets/cubeIcon.png';
-import githubIcon from '../../assets/githubIcon.png';
-import linkdinIcon from '../../assets/linkdinIcon.png';
-// className="bg-body-tertiary" color
+import githubIcon from '../../assets/githubIcon2.png';
+import linkdinIcon from '../../assets/linkedinIcon2.png';
 
 export const NavBar = () => {
 	const [activeLink, setActiveLink] = useState('home');
-	const [scrolled, setScrolled] = useState(false); //para detectar el scrool x cambio de color de fondo
+	const [scrolled, setScrolled] = useState(false);
 
 	useEffect(() => {
 		const onScroll = () => {
@@ -17,24 +16,30 @@ export const NavBar = () => {
 				setScrolled(false);
 			}
 		};
-		window.addEventListener('scroll', onscroll);
+
+		window.addEventListener('scroll', onScroll);
+
 		return () => window.removeEventListener('scroll', onScroll);
 	}, []);
 
 	const onUpdateActiveLink = (value) => {
-		return setActiveLink(value);
+		setActiveLink(value);
 	};
+
 	return (
-		<Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
+		<Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
 			<Container>
-				<Navbar.Brand href="#home">
-					<img src={cubeIcon} alt="logo" />
+				<Navbar.Brand href="/" className="ml-auto">
+					<img src={cubeIcon} alt="Logo" />
+					<span className="text-white mx-auto font-weight-bold">
+						Julia Franchi
+					</span>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">
-					<span className="navbar-toggle-icon" />
+					<span className="navbar-toggler-icon"></span>
 				</Navbar.Toggle>
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto">
+					<Nav className="ms-auto">
 						<Nav.Link
 							href="#home"
 							className={
@@ -51,7 +56,7 @@ export const NavBar = () => {
 							}
 							onClick={() => onUpdateActiveLink('skills')}
 						>
-							skills
+							Skills
 						</Nav.Link>
 						<Nav.Link
 							href="#projects"
@@ -60,20 +65,21 @@ export const NavBar = () => {
 							}
 							onClick={() => onUpdateActiveLink('projects')}
 						>
-							projects
+							Projects
 						</Nav.Link>
 					</Nav>
 					<span className="navbar-text">
-						<div className="social icon">
-							<a href="#icon">
-								<img src={githubIcon} alt="" />
+						<div className="social-icon">
+							<a href="#">
+								<img src={githubIcon} alt="github" />
 							</a>
-							<a href="#icon">
-								<img src={linkdinIcon} alt="" />
+							<a href="#">
+								<img src={linkdinIcon} alt="linkedin" />
 							</a>
 						</div>
-						<button className="vvd" onClick={() => console.log('connect')}>
-							<span className=""> contactame </span>
+
+						<button className="vvd">
+							<span>Contactame</span>
 						</button>
 					</span>
 				</Navbar.Collapse>
