@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import yo from '../../assets/yo.png';
 
 export const Banner = () => {
 	const [loopNum, setLoopNum] = useState(0);
@@ -46,22 +47,23 @@ export const Banner = () => {
 	return (
 		<section className="banner" id="home">
 			<Container>
-				<Row className=" align-items-center">
-					<Col xs={12} md={6} xl={7}></Col>
-					<span className="tagline"> Bienvenido a mi Portfolio</span>
-					<h1>
-						{`Frontend Developer`} <span className="wrap">{text}</span>
-					</h1>
-					<p>
-						{' '}
-						kjashdkasjhdaklsjdlaskjdklasdjskaldjaskldjaskldjjlkasdjklasdjalskdjalksdj
-					</p>
-					<button onClick={() => console.log('connect')}>
-						{' '}
-						Contactame <ArrowRightCircle size={25} />
-					</button>
-					<Col xs={12} md={6} xl={5}>
-						<img src={''} alt="Headder Img" />
+				<Row className="align-items-center">
+					<Col xs={12} md={6} xl={7}>
+						<div>
+							<span className="tagline">Bienvenido a mi Portfolio</span>
+							<h1>
+								{`Julia Franchi`} <span className="wrap">{text}</span>
+							</h1>
+							<p>
+								kjashdkasjhdaklsjdlaskjdklasdjskaldjaskldjaskldjjlkasdjklasdjalskdjalksdj
+							</p>
+							<button onClick={() => console.log('connect')}>
+								Contactame <ArrowRightCircle size={25} />
+							</button>
+						</div>
+					</Col>
+					<Col xs={12} md={6} xl={5} className="mr-auto">
+						<img src={yo} alt="Headder Img" />
 					</Col>
 				</Row>
 			</Container>

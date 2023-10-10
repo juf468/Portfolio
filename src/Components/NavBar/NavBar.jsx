@@ -31,9 +31,7 @@ export const NavBar = () => {
 			<Container>
 				<Navbar.Brand href="/" className="ml-auto">
 					<img src={cubeIcon} alt="Logo" />
-					<span className="text-white mx-auto font-weight-bold ">
-						Julia Franchi Frontend Developer
-					</span>
+					<span className="text-white mx-auto font-weight-bold ">JFFD</span>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">
 					<span className="navbar-toggler-icon"></span>
