@@ -31,8 +31,8 @@ export const NavBar = () => {
 			<Container>
 				<Navbar.Brand href="/" className="ml-auto">
 					<img src={cubeIcon} alt="Logo" />
-					<span className="text-white mx-auto font-weight-bold">
-						Julia Franchi
+					<span className="text-white mx-auto font-weight-bold ">
+						Julia Franchi Frontend Developer
 					</span>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -56,7 +56,7 @@ export const NavBar = () => {
 							}
 							onClick={() => onUpdateActiveLink('skills')}
 						>
-							Skills
+							Habilidades
 						</Nav.Link>
 						<Nav.Link
 							href="#projects"
@@ -65,7 +65,7 @@ export const NavBar = () => {
 							}
 							onClick={() => onUpdateActiveLink('projects')}
 						>
-							Projects
+							Proyectos
 						</Nav.Link>
 					</Nav>
 					<span className="navbar-text">
