@@ -1,0 +1,103 @@
+-Dom
+Document Object Model es un arbol de nodos , (estructura de datos ) empieza con el html y luego body y los elementos , conceptos mas avanzados virtual dom , es un documento de estructura html (etiquetas) 
+
+- Accesibilidad
+
+atributos , aria 
+
+- Implementar estilos en sitio web
+talewind , stalk components (reutilizar, estilos globales)
+
+- bem
+
+nombre de las clases ( no lo use nunca) 
+
+- pre/post procesadores de css
+Sass, Less , lenguaje mas mantenible y escalable , mixin etc 
+
+- pixel perfect
+no se la definicion como tal  pero entiendo que es alucion a diseños limpios , prolijos y profesionales 
+
+ 
+ 
+JAVASCRIPT
+- variables en javascript var - let - const
+en js hay definir variables (var let const)
+const: una vez que la defines no se puede modificar (array, objeto) se pueden mutar 
+
+var y let si se pueden redefinir 
+
+var: ambito global (No se recomienda usarlo) si se redifine adentro del alcanze del ambito de una funcion o de una clase , se redifine globalmente
+
+let: esta variable se define adentro del ambito pero por fuera de ese ambito no se modifica 
+
+
+- hoisting
+Las variables se elevan antes de la ejecucion del proceso , puedo referenciar una variable o una funcion antes de su definicion , aplcia a var y function , const  y let y a las de flecha 
+ 
+- arrow functions
+Sintaxis y se comporta distinto con el (this) 
+
+- functiones tradicionales
+ se comporta distinto con el this , en los casos que use fueron mas en el back-end 
+ 
+- scope (ambito)
+es un bloque en el que una funcion tiene un ambito, 
+la funcion utilizar a la variable que utilize en esa funcion 
+
+ 
+- closure
+variables que estan en ambito global y se utiliza en las funciones 
+ 
+- callbacks
+ funciones que se pasan como parametros usandolo en los hooks de react 
+ 
+ 
+- promises
+son un tipo de dato , se usan para mas funciones asincronos, esperar un tiempo antes que se resuelva(se atrapa con un try cath) o then 
+
+
+- async-await
+tema de sintaxis, una funcion no se puede declarar como async y debes usar un proceso asincrono , then y cath 
+
+la mas limpia se me hace async- await 
+
+ 
+- se puede utilizar el await fuera de una funcion?
+no, siempre va a esperar que la funcion sea async 
+
+
+
+
+- IIFE expresion de funcion ejecutada inmediatamente (immediately invoked function expression)
+ 
+ 
+ 
+ - Clases - herencia por prototipo
+ 
+REACT
+- Que es React.JS?
+react . js es una libreria creada por fb para agilizar la creacion de paginas y apps web ( mas que nada en front) libreria basada en componentes, implementa una forma de manejar bloques de codigo altamente reutilizables 
+
+
+- Virtual dom
+una copia del dom pero administrada por js , en vez de re redenderizar todo el dom , el virtual dom detecta los cambios antes de detectar los cambios del dom original , optimiza los procesos 
+
+- props vs state
+los props son las que pasa un elemento padre a uno hijo , se usan cuando el padre es el encargado de administrar esas propiedades y que cambien del contexto o funcion 
+
+y con state son cosas que solo utiliza el componente en si 
+
+
+- cuando elijo prop vs state
+cuando tengo que enlistar algo , y tengo las propiedade sen un array , lo que hago es pasarlo por un map , para state selecionar un boton activado o desactivado
+
+
+- useEffect(callback, array de dependencias), componentdidmount, componentwillunmount, etc
+
+volver a ejecutar la logica que le pongas dentro del hook recibe un callback y se ejecuta  y la lista de dependencias (array que recibe variables) si cambia se vuelve a ejecutar (se utiliza en componentes funcionales) 
+
+
+
+
+
