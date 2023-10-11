@@ -7,7 +7,7 @@ export const Banner = () => {
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(0);
 
-	const toRotate = ['Frontend Developer'];
+	const toRotate = [' (Frontend Developer)=>'];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100);
 
@@ -40,7 +40,7 @@ export const Banner = () => {
 		} else if (isDeleting && updatedText === '') {
 			setIsDeleting(false);
 			setLoopNum(loopNum + 1);
-			setDelta(500);
+			setDelta(100);
 		}
 	};
 
@@ -52,10 +52,10 @@ export const Banner = () => {
 						<div>
 							<span className="tagline">Bienvenido a mi Portfolio</span>
 							<h1>
-								{`Julia Franchi`} <span className="wrap">{text}</span>
+								{`const juliaFranchi =`} <span className="wrap">{text}</span>
 							</h1>
 							<p>
-								kjashdkasjhdaklsjdlaskjdklasdjskaldjaskldjaskldjjlkasdjklasdjalskdjalksdj
+								{`{ kjashdkasjhdaklsjdlaskjdklasdjskaldjaskldjaskldjjlkasdjklasdjalskdjalksd }`}
 							</p>
 							<button onClick={() => console.log('connect')}>
 								Contactame <ArrowRightCircle size={25} />
