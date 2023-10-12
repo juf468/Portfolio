@@ -81,7 +81,7 @@ export const Skills = () => {
 								</div>
 								<div className="item">
 									<img src={BoostrapLogo} alt="Image" />
-									<h5>Boostrap</h5>
+									<h5>Bootstrap</h5>
 								</div>
 							</Carousel>
 						</div>
