@@ -1,0 +1,21 @@
+{
+    "projects": [
+        {
+            "title": "Rick and Morty",
+            "description": "Proyecto integrador, donde se incorporan todas las tecnologías aprendidas en Henry Bootcamp. Es mi primer proyecto Full Stack que incluye la tecnologias: React, Redux, JavaScript, React-router-dom, Node.js, Sequelize, Express y SQL.",
+            "imgUrl": "https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg"
+        },
+        
+            {
+                "title": "Drivers",
+                "description": "Proyecto de carácter individual brindado en Henry Bootcamp y de carácter evaluativo. Este proyecto buscaba:\n- Construir una Single Page Application utilizando las tecnologías: React, Redux, Node, Express y Sequelize.\n- Poner en práctica recursos básicos de estilos y diseño (UX : UI).\n- Afirmar y conectar los conceptos aprendidos en la carrera.\n- Aprender mejores prácticas.\n- Aprender y practicar el flujo de trabajo de GIT.",
+                "imgUrl": "https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg"
+            },
+            
+        {
+            "title": "SELPRO",
+            "description": "Viví la experiencia de poder contribuir para Selpro una empresa Colombiana que que permite la optimización en las compras B2B de manera fácil, rápida y segura, a través de subastas inversas y remates.En este proyecto me encargué de la creación de formularios de remates, subastas inversas, productos y proveedor, también contribuí en la investigación y utilización de Cloudinary.",
+            "imgUrl": "https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg"
+        }
+    ]
+}
