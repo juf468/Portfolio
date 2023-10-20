@@ -1,6 +1,7 @@
 import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import { ProjectsCard } from '../Card/ProjectsCard';
 import db from '../../api/db.json';
+import ImageGallery from '../Gallery/Gallery';
 
 export const Projects = () => {
 	const projects = db.projects;
@@ -11,14 +12,13 @@ export const Projects = () => {
 
 	const Drivers = projects.find((project) => project.title === 'Drivers F1');
 
-	const SELRPO = projects.find((project) => project.title === 'SELPRO');
+	const SELPRO = projects.find((project) => project.title === 'SELPRO');
 	return (
 		<section className="projects" id="projects">
 			<Container>
 				<Row>
 					<Col>
-						<h2>Proyectos</h2>
-
+						<h2> Proyectos </h2>
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav
 								variant="pills"
@@ -38,17 +38,37 @@ export const Projects = () => {
 							<Tab.Content>
 								<Tab.Pane eventKey="first">
 									<Row>
-										{rickAndMortyProject && (
-											<ProjectsCard {...rickAndMortyProject} />
-										)}
+										<Col sm={6}>
+											{rickAndMortyProject && (
+												<ProjectsCard {...rickAndMortyProject} />
+											)}
+										</Col>
+										<Col sm={6}>
+											<div className="image-container">
+												<ImageGallery images={rickAndMortyProject.imgUrls} />
+											</div>
+										</Col>
 									</Row>
 								</Tab.Pane>
 								<Tab.Pane eventKey="second">
-									<Row>{Drivers && <ProjectsCard {...Drivers} />}</Row>
+									<Row>
+										<Col sm={6}>{Drivers && <ProjectsCard {...Drivers} />}</Col>
+										<Col sm={6}>
+											<div className="image-container">
+												<ImageGallery images={Drivers.imgUrls} />
+											</div>
+										</Col>
+									</Row>
 								</Tab.Pane>
-
 								<Tab.Pane eventKey="third">
-									<Row>{SELRPO && <ProjectsCard {...SELRPO} />}</Row>
+									<Row>
+										<Col sm={6}>{SELPRO && <ProjectsCard {...SELPRO} />}</Col>
+										<Col sm={6}>
+											<div className="image-container">
+												<ImageGallery images={SELPRO.imgUrls} />
+											</div>
+										</Col>
+									</Row>
 								</Tab.Pane>
 							</Tab.Content>
 						</Tab.Container>

@@ -357,19 +357,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	background-color: black;
 }
 .projects h2 {
+	text-align: center;
 	margin-bottom: 40px;
 	font-size: 45px;
 	font-weight: 700;
 	text-align: center;
-}
-.projects p {
-	color: #b8b8b8;
-	font-size: 18px;
-	letter-spacing: 0.8px;
-	line-height: 1.5em;
-	margin: 14px auto 30px auto;
-	text-align: center;
-	width: 56%;
 }
 .projects .nav.nav-pills {
 	width: 72%;
@@ -494,4 +486,41 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	color: #b8b8b8;
 	letter-spacing: 0.5px;
 	margin-top: 20px;
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+	gap: 10px; /* Espacio entre las imágenes */
+	overflow-y: auto; /* Agregar desplazamiento vertical cuando sea necesario */
+	overflow-x: hidden; /* Ocultar el desplazamiento horizontal */
+	max-height: 400px; /* Establece la altura máxima para mostrar la barra de desplazamiento vertical */
+
+	/* Estilos de la barra de desplazamiento para navegadores compatibles */
+	scrollbar-color: #6115b6; /* Cambia el color de la barra de desplazamiento (solo navegadores compatibles) */
+
+	/* Estilos de la barra de desplazamiento para navegadores no compatibles (WebKit) */
+	&::-webkit-scrollbar {
+		width: 12px; /* Ancho de la barra de desplazamiento */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #6115b6; /* Color del pulgar de la barra de desplazamiento */
+	}
+}
+/* Estilos para cada imagen */
+.image-item {
+	width: 100%;
+	padding: 5px; /* Espacio entre las imágenes y el borde */
+	box-sizing: border-box;
+}
+
+/* Estilos para las imágenes */
+.image-item img {
+	width: 100%;
+	height: auto;
+	max-width: 700px; /* Aproximadamente 7 cm */
+	max-height: 700px; /* Aproximadamente 7 cm */
+	object-fit: cover; /* Escalar y recortar la imagen para ajustarla */
 }

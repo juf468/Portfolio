@@ -1,21 +1,42 @@
+
 {
+    
     "projects": [
         {
             "title": "Rick and Morty",
             "description": "Proyecto integrador, donde se incorporan todas las tecnologías aprendidas en Henry Bootcamp. Es mi primer proyecto Full Stack que incluye la tecnologias: React, Redux, JavaScript, React-router-dom, Node.js, Sequelize, Express y SQL.",
-            "imgUrl": "https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg"
+            "imgUrls": [
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697827626/Portfolio/grqx863itrlpimk16sbs.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697827625/Portfolio/clogyyhn3pvvnvvfz3ou.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697827625/Portfolio/gydpha2n5vxkcyx0illp.png"
+              ]
         },
         
             {
                 "title": "Drivers F1",
                 "description": "Proyecto de carácter individual brindado en Henry Bootcamp y de carácter evaluativo. Este proyecto buscaba:\n- Construir una Single Page Application utilizando las tecnologías: React, Redux, Node, Express y Sequelize.\n- Poner en práctica recursos básicos de estilos y diseño (UX : UI).\n- Afirmar y conectar los conceptos aprendidos en la carrera.\n- Aprender mejores prácticas.\n- Aprender y practicar el flujo de trabajo de GIT.",
-                "imgUrl": "https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg"
+                "imgUrls": [
+            "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697833505/Portfolio/dlmlbmjbpzcfz01bkfaz.png",
+              "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697833505/Portfolio/wxfgsen8gpxqjhyen4gv.png",
+              "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697833507/Portfolio/gupsn5pqi5ma2gecwvpj.png",
+              "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697833506/Portfolio/t8x5wwnjgvrp8a54352y.png",
+              "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697833505/Portfolio/mnmlaap5chucxosa2aww.png",
+              "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697833505/Portfolio/kc3rcdsiuw7zn4pu5ftj.png"
+                ]
             },
             
         {
             "title": "SELPRO",
             "description": "Viví la experiencia de poder contribuir para Selpro una empresa Colombiana que que permite la optimización en las compras B2B de manera fácil, rápida y segura, a través de subastas inversas y remates.En este proyecto me encargué de la creación de formularios de remates, subastas inversas, productos y proveedor, también contribuí en la investigación y utilización de Cloudinary.",
-            "imgUrl": "https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg"
+            "imgUrls": [
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834528/Portfolio/Captura_desde_2023-09-11_19-22-16_ply9vv.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834529/Portfolio/Captura_desde_2023-09-11_21-04-35_s23ba0.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834530/Portfolio/Captura_desde_2023-09-11_21-17-45_kie2bv.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834527/Portfolio/Captura_desde_2023-09-11_19-21-35_yv4r1q.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834527/Portfolio/Captura_desde_2023-09-11_19-21-14_ficj93.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834528/Portfolio/Captura_desde_2023-09-11_21-00-16_fyv6eo.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834530/Portfolio/Captura_desde_2023-09-11_21-17-18_evm6ea.png"
+                ]
         }
     ]
 }
