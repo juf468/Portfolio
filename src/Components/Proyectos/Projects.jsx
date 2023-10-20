@@ -1,28 +1,24 @@
 import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import { ProjectsCard } from '../Card/ProjectsCard';
+import db from '../../api/db.json';
 
 export const Projects = () => {
-	const projects = [
-		{
-			title: 'Rick and Morty',
-			description: 'akjdasjdoiasdjo',
-			imgUrl:
-				'https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg',
-		},
-		{
-			title: 'Drivers',
-			description: 'akjdasjdoiasdjo',
-			imgUrl:
-				'https://us.123rf.com/450wm/cvetinaivanova/cvetinaivanova2301/cvetinaivanova230100100/199685538-c%C3%A1mara-de-fotos-e-icono-de-imagen-o-imagen-s%C3%ADmbolo-lleno-de-galer%C3%ADa-%C3%A1lbum-y-fotograf%C3%ADa.jpg',
-		},
-	];
+	const projects = db.projects;
+
+	const rickAndMortyProject = projects.find(
+		(project) => project.title === 'Rick and Morty'
+	);
+
+	const Drivers = projects.find((project) => project.title === 'Drivers F1');
+
+	const SELRPO = projects.find((project) => project.title === 'SELPRO');
 	return (
 		<section className="projects" id="projects">
 			<Container>
 				<Row>
 					<Col>
 						<h2>Proyectos</h2>
-						<p> asdasdasda</p>
+
 						<Tab.Container id="projects-tabs" defaultActiveKey="first">
 							<Nav
 								variant="pills"
@@ -30,25 +26,30 @@ export const Projects = () => {
 								id="pills-tab"
 							>
 								<Nav.Item>
-									<Nav.Link eventKey="first">Tab 1</Nav.Link>
+									<Nav.Link eventKey="first">Rick and Morty</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="second">Tab 2</Nav.Link>
+									<Nav.Link eventKey="second">Drivers F1</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="third">Tab 3</Nav.Link>
+									<Nav.Link eventKey="third">SELPRO</Nav.Link>
 								</Nav.Item>
 							</Nav>
 							<Tab.Content>
 								<Tab.Pane eventKey="first">
 									<Row>
-										{projects.map((project, index) => {
-											return <ProjectsCard key={index} {...project} />;
-										})}
+										{rickAndMortyProject && (
+											<ProjectsCard {...rickAndMortyProject} />
+										)}
 									</Row>
 								</Tab.Pane>
-								<Tab.Pane eventKey="second"> Loren Ipsum</Tab.Pane>
-								<Tab.Pane eventKey="third"> Loren Ipsum</Tab.Pane>
+								<Tab.Pane eventKey="second">
+									<Row>{Drivers && <ProjectsCard {...Drivers} />}</Row>
+								</Tab.Pane>
+
+								<Tab.Pane eventKey="third">
+									<Row>{SELRPO && <ProjectsCard {...SELRPO} />}</Row>
+								</Tab.Pane>
 							</Tab.Content>
 						</Tab.Container>
 					</Col>

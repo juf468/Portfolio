@@ -37,11 +37,7 @@ export const Skills = () => {
 					<Col>
 						<div className="skill-bx">
 							<h2>Tecnologías</h2>
-							<p>
-								{' '}
-								iojqwoiejqwoiejioqwejqowiejioqwejqiowejqwoioiqjweoiqjweoiqwqoije,
-								<br></br> askldjaskldjaslkdj
-							</p>
+
 							<Carousel
 								responsive={responsive}
 								infinite={true}

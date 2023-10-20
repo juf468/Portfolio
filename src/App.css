@@ -312,6 +312,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	margin-top: -60px;
 }
 .skill h2 {
+	margin-bottom: 40px;
 	font-size: 50px;
 	font-weight: 700;
 }
@@ -356,6 +357,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	background-color: black;
 }
 .projects h2 {
+	margin-bottom: 40px;
 	font-size: 45px;
 	font-weight: 700;
 	text-align: center;
