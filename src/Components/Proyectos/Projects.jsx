@@ -1,4 +1,4 @@
-import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
+import { Col, Container, Nav, NavLink, Row, Tab } from 'react-bootstrap';
 import { ProjectsCard } from '../Card/ProjectsCard';
 import db from '../../api/db.json';
 import ImageGallery from '../Gallery/Gallery';
@@ -48,16 +48,41 @@ export const Projects = () => {
 												<ImageGallery images={rickAndMortyProject.imgUrls} />
 											</div>
 										</Col>
+										<Row sm={8} className="flex flex-row">
+											<p>
+												link:{' '}
+												<a
+													href="https://github.com/juf468/rick-and-morty"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													https://github.com/juf468/rick-and-morty
+												</a>
+											</p>
+										</Row>
 									</Row>
 								</Tab.Pane>
 								<Tab.Pane eventKey="second">
 									<Row>
 										<Col sm={6}>{Drivers && <ProjectsCard {...Drivers} />}</Col>
+
 										<Col sm={6}>
 											<div className="image-container">
 												<ImageGallery images={Drivers.imgUrls} />
 											</div>
 										</Col>
+										<Row sm={8} className="flex flex-row">
+											<p>
+												link:{' '}
+												<a
+													href="https://github.com/juf468/Pi-drivers"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													https://github.com/juf468/Pi-drivers
+												</a>
+											</p>
+										</Row>
 									</Row>
 								</Tab.Pane>
 								<Tab.Pane eventKey="third">
@@ -65,7 +90,14 @@ export const Projects = () => {
 										<Col sm={6}>{SELPRO && <ProjectsCard {...SELPRO} />}</Col>
 										<Col sm={6}>
 											<div className="image-container">
-												<ImageGallery images={SELPRO.imgUrls} />
+												<iframe
+													src="https://player.vimeo.com/video/868063080?h=653a66eb66"
+													width="640"
+													height="360"
+													frameborder="0"
+													allow="autoplay; fullscreen; picture-in-picture"
+													allowfullscreen
+												></iframe>
 											</div>
 										</Col>
 									</Row>
