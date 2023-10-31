@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import yo from '../../assets/yo.png';
+import yo from '../../assets/julita.jpg';
 
 export const Banner = () => {
 	const [loopNum, setLoopNum] = useState(0);
@@ -50,12 +50,12 @@ export const Banner = () => {
 				<Row className="align-items-center">
 					<Col xs={12} md={6} xl={7}>
 						<div>
-							<span className="tagline">Bienvenido a mi Portfolio</span>
+							<span className="tagline">Sobre mí</span>
 							<h1>
 								{`const juliaFranchi =`} <span className="wrap">{text}</span>
 							</h1>
 							<p>
-								{`{ kjashdkasjhdaklsjdlaskjdklasdjskaldjaskldjaskldjjlkasdjklasdjalskdjalksd }`}
+								{`{ Naci el 23 de Septiembre 1996, desde los 12 años me dedico a las acrobacias, me gusta dibujar y pintar, tambien me interese en la salud y trabaje como tecnica de EEG. Sin embargo, mi lado artístico ha sido un constante motor de inspiración. Estoy en constante búsqueda de una alternativa que me permita fusionar mis pasiones y habilidades. A través de la creación de productos y diseños, aspiro a manifestar la esencia multifacética que me define.}`}
 							</p>
 							<button onClick={() => console.log('connect')}>
 								Contactame <ArrowRightCircle size={25} />
