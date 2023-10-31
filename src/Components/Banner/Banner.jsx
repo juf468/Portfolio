@@ -55,11 +55,16 @@ export const Banner = () => {
 								{`const juliaFranchi =`} <span className="wrap">{text}</span>
 							</h1>
 							<p>
-								{`{ Naci el 23 de Septiembre 1996, desde los 12 años me dedico a las acrobacias, me gusta dibujar y pintar, tambien me interese en la salud y trabaje como tecnica de EEG. Sin embargo, mi lado artístico ha sido un constante motor de inspiración. Estoy en constante búsqueda de una alternativa que me permita fusionar mis pasiones y habilidades. A través de la creación de productos y diseños, aspiro a manifestar la esencia multifacética que me define.}`}
+								{`{ Nací el 23 de septiembre de 1996. Desde los 12 años me dedico a las acrobacias. Me gusta dibujar y pintar, también me interesé en la salud y trabajé como técnica de EEG. Sin embargo, mi lado artístico ha sido un constante motor de inspiración. Estoy en constante búsqueda de una alternativa que me permita fusionar mis pasiones y habilidades. A través de la creación de productos y diseños, aspiro a manifestar la esencia multifacética que me define.}`}
 							</p>
-							<button onClick={() => console.log('connect')}>
-								Contactame <ArrowRightCircle size={25} />
-							</button>
+							<a
+								href="https://api.whatsapp.com/send?phone=541123872053"
+								style={{ textDecoration: 'none' }}
+							>
+								<button>
+									Contactame <ArrowRightCircle size={25} />
+								</button>
+							</a>
 						</div>
 					</Col>
 					<Col xs={12} md={6} xl={5} className="mr-auto">

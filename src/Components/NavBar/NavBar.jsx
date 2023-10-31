@@ -78,9 +78,14 @@ export const NavBar = () => {
 							</a>
 						</div>
 
-						<button className="vvd">
-							<span>Contactame</span>
-						</button>
+						<a
+							href="https://api.whatsapp.com/send?phone=541123872053"
+							className="vvd"
+						>
+							<button>
+								<span>Contactame</span>
+							</button>
+						</a>
 					</span>
 				</Navbar.Collapse>
 			</Container>
