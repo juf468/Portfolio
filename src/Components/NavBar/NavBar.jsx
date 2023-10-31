@@ -81,6 +81,8 @@ export const NavBar = () => {
 						<a
 							href="https://api.whatsapp.com/send?phone=541123872053"
 							className="vvd"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<button>
 								<span>Contactame</span>
