@@ -89,14 +89,16 @@ export const Projects = () => {
 									<Row>
 										<Col sm={6}>{SELPRO && <ProjectsCard {...SELPRO} />}</Col>
 										<Col sm={6}>
-											<div className="image-container">
+											<div className="image-container embed-responsive embed-responsive-16by9">
 												<iframe
+													className="embed-responsive-item"
 													src="https://player.vimeo.com/video/868063080?h=653a66eb66"
 													width="640"
 													height="360"
-													frameborder="0"
+													frameBorder="0"
 													allow="autoplay; fullscreen; picture-in-picture"
-													allowfullscreen
+													allowFullScreen
+													title="SELPRO Video"
 												></iframe>
 											</div>
 										</Col>
