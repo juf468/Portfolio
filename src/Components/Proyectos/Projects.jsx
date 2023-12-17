@@ -1,4 +1,4 @@
-import { Col, Container, Nav, NavLink, Row, Tab } from 'react-bootstrap';
+import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import { ProjectsCard } from '../Card/ProjectsCard';
 import db from '../../api/db.json';
 import ImageGallery from '../Gallery/Gallery';
