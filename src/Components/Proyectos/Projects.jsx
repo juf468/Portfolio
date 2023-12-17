@@ -89,13 +89,10 @@ export const Projects = () => {
 									<Row>
 										<Col sm={6}>{SELPRO && <ProjectsCard {...SELPRO} />}</Col>
 										<Col sm={6}>
-											<div className="image-container embed-responsive embed-responsive-16by9">
+											<div className="image-container embed-responsive embed-responsive-16by9 video-container">
 												<iframe
-													className="embed-responsive-item"
+													className="embed-responsive-item video-iframe"
 													src="https://player.vimeo.com/video/868063080?h=653a66eb66"
-													width="640"
-													height="360"
-													frameBorder="0"
 													allow="autoplay; fullscreen; picture-in-picture"
 													allowFullScreen
 													title="SELPRO Video"
@@ -112,3 +109,6 @@ export const Projects = () => {
 		</section>
 	);
 };
+//Esta configuración utiliza la clase embed-responsive y embed-responsive-16by9
+// proporcionada por Bootstrap para garantizar que el video se ajuste de manera responsable al tamaño del contenedor padre (image-container).
+//El iframe se establece con una relación de aspecto 16:9, y la clase embed-responsive-item controla su comportamiento dentro del contenedor.

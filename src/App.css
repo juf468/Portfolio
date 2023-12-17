@@ -527,3 +527,16 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	max-height: 700px; /* Aproximadamente 7 cm */
 	object-fit: cover; /* Escalar y recortar la imagen para ajustarla */
 }
+
+.video-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.video-iframe {
+	display: flex;
+	flex: 1;
+	height: 100%;
+	width: 100%;
+}
