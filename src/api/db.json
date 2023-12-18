@@ -37,6 +37,35 @@
                 "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834528/Portfolio/Captura_desde_2023-09-11_21-00-16_fyv6eo.png",
                 "https://res.cloudinary.com/dgshkxpe3/image/upload/v1697834530/Portfolio/Captura_desde_2023-09-11_21-17-18_evm6ea.png"
                 ]
+        },
+                   
+        {
+            "title": "TA-TE-TI",
+            "description": "Juego de TA-TE-TI, Tres en line, Michi, Gato,Tic Tac Toe, o como mas te guste llamarlo ;). Este mini proyecto contempla a traves de un contandor quien esta ganando festejandolo con una animacion (logica ClassNames en css), tambien contempla el caso de empate.",
+            "imgUrls": [
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702871720/Captura_desde_2023-12-18_00-43-50_c0uhgz.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702871720/Captura_desde_2023-12-18_00-44-36_k8h0zd.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702871720/Captura_desde_2023-12-18_00-44-36_k8h0zd.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702871720/Captura_desde_2023-12-18_00-44-46_d4u6o9.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702871720/Captura_desde_2023-12-18_00-44-17_uyqzpu.png"
+                ]
+        },
+        {
+            "title": "To Do List",
+            "description": "Con ella podemos anotar las tareas por hacer, eliminarlas o tacharlas cuando están completadas. Tiene filtros para verlas todas, ver las realizadas o ver las que quedan por hacer.\nTecnologias utilizadas: React.js y TailwindCSS.",
+            "imgUrls": [
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702925185/Captura_desde_2023-12-18_15-42-33_kusdrz.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702925185/Captura_desde_2023-12-18_15-43-05_mktoqd.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702925185/Captura_desde_2023-12-18_15-43-32_skemgj.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702925185/Captura_desde_2023-12-18_15-43-40_wqbcyt.png",
+                "https://res.cloudinary.com/dgshkxpe3/image/upload/v1702925185/Captura_desde_2023-12-18_15-43-49_tycazo.png"
+                ]
         }
     ]
 }
+
+
+
+
+
+
