@@ -109,6 +109,3 @@ export const Projects = () => {
 		</section>
 	);
 };
-//Esta configuración utiliza la clase embed-responsive y embed-responsive-16by9
-// proporcionada por Bootstrap para garantizar que el video se ajuste de manera responsable al tamaño del contenedor padre (image-container).
-//El iframe se establece con una relación de aspecto 16:9, y la clase embed-responsive-item controla su comportamiento dentro del contenedor.
