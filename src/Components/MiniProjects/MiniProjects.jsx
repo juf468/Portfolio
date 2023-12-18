@@ -11,12 +11,12 @@ export const MiniProjects = () => {
 	const ToDoList = projects.find((project) => project.title === 'To Do List');
 
 	return (
-		<section className="projects" id="projects">
+		<section className="min-projects" id="min-projects">
 			<Container>
 				<Row>
 					<Col>
 						<h2> Mini-Proyectos </h2>
-						<Tab.Container id="projects-tabs" defaultActiveKey="first">
+						<Tab.Container id="min-projects-tabs" defaultActiveKey="first">
 							<Nav
 								variant="pills"
 								className="nav-pills mb-5 justify-content-center align-items-center"
