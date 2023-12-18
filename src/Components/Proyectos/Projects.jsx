@@ -44,7 +44,7 @@ export const Projects = () => {
 											)}
 										</Col>
 										<Col sm={6}>
-											<div className="image-container">
+											<div>
 												<ImageGallery images={rickAndMortyProject.imgUrls} />
 											</div>
 										</Col>
